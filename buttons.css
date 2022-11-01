@@ -53,3 +53,25 @@
 .btn-text-navy:hover {
     background-color: var(--lightblue);
 }
+
+.btn-transparent:hover {
+    background-color: var(--lightblue);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.btn-icon svg {
+    height: 1em;
+}
+
+.btn-icon.gray svg {
+    fill: var(--gray-2);
+}
+
+.btn-icon.navy svg {
+    fill: var(--navy);
+}

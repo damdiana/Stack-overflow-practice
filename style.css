@@ -101,26 +101,6 @@ nav ul {
     line-height: 2em;
 }
 
-.text-with-icon {
-    position: relative;
-}
-
-.text-with-icon.icon-left svg {
-    left: -1.40em;
-}
-
-.text-with-icon.icon-right svg {
-    right: 1em;
-}
-
-.text-with-icon svg {
-    position: absolute;
-    width: 1em;
-    fill: var(--gray-2);
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 /* main */
 
 main {
@@ -154,6 +134,10 @@ h1 {
     padding-left: 3em;
 }
 
+.summary p:first-child {
+    margin: 0;
+}
+
 h2 {
     font-size: 20px;
     font-weight: normal;
@@ -177,6 +161,61 @@ h2 a:visited {
 
 .article-tag {
     border: 0;
+}
+
+/* aside */
+
+aside {
+    background-color: hsl(47deg 87% 94%);
+    width: 300px;
+    height: 600px;
+    border-radius: 0.1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 0px;
+    border: 1px solid hsl(46deg 65% 84%);
+    padding: 0 1em 1em 0;
+    margin: 1.5em;
+}
+
+aside header {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    background-color: hsl(46deg 87% 91%);
+    border: 1px solid hsl(46deg 65% 84%);
+    padding: 0.5em;
+}
+
+/* icons */
+
+aside .text-with-icon svg {
+    width: 0.8em;
+}
+
+.text-with-icon {
+    position: relative;
+}
+
+.text-with-icon svg {
+    position: absolute;
+    width: 1em;
+    fill: currentColor;
+}
+
+.text-with-icon--left svg {
+    left: -1.40em;
+}
+
+.text-with-icon--right svg {
+    right: 1em;
+}
+
+.text-with-icon--top {
+    top: 0;
+}
+
+.text-with-icon--center svg {
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* form  */

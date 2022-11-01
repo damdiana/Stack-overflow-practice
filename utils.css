@@ -1,5 +1,4 @@
 /*********************** FLEX  */
-
 .flex {
     display: flex;
 }
@@ -41,13 +40,11 @@
 }
 
 /*********************** Other displays  */
-
 .block {
     display: block;
 }
 
 /*********************** POSITION  */
-
 .relative {
     position: relative;
 }
@@ -57,7 +54,6 @@
 }
 
 /*********************** PADDING  */
-
 .py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -74,6 +70,10 @@
 
 .pl-2 {
     padding-left: 0.5em;
+}
+
+.p-4 {
+    padding: 1em;
 }
 
 .px-3 {
@@ -99,7 +99,6 @@
 }
 
 /*********************** MARGIN  */
-
 .mt-0 {
     margin-top: 0;
 }
@@ -118,6 +117,11 @@
 
 .mr-1 {
     margin-right: 0.25em;
+    margin-right: 0.25em;
+}
+
+.m-2 {
+    margin: 0.5em;
 }
 
 .mb-2 {
@@ -133,7 +137,6 @@
 }
 
 /*********************** FONTS AND TEXT-ALIGN   */
-
 .text-center {
     text-align: center;
 }
