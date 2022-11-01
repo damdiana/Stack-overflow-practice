@@ -138,3 +138,93 @@ nav ul {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.align-text {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+
+}
+
+.img-teams {
+    width: 8em;
+}
+
+/* main */
+
+.gray-button {
+    border: solid 1px var(--gray-3);
+    padding: 0.5em 0.8em;
+    gap: 0.2em;
+    color: var(--gray-2);
+    font-size: 15px;
+
+}
+
+main {
+    width: 60%;
+}
+
+.blue-button {
+    border: solid 1px var(--blue);
+    background-color: var(--blue);
+    padding: 0.3em;
+    color: var(--white);
+    box-shadow: inset hsl(210deg 100% 75%) 0 1px 0 0;
+    border-radius: 0.2em;
+
+}
+
+.light-blue-button {
+    border: var(--navy) solid 1px;
+    background-color: var(--lightblue);
+    padding: 0.5em 0.8em;
+    border-radius: 0.2em;
+    color: var(--navy);
+    margin-left: 1em;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.summary {
+    gap: 6px;
+    width: 10%;
+    align-items: flex-end;
+    color: var(--gray-2);
+    flex-shrink: 0;
+    font-size: 14px;
+    padding-left: 3em;
+
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--blue);
+}
+
+h2 a:visited {
+    color: var(--dark-blue);
+}
+
+.tag-button {
+    background-color: var(--lightblue);
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    border-radius: 0.2em;
+    color: var(--navy);
+    font-size: 15px;
+    margin: 0 0.2em 0.4em 0;
+}
+
+.post-summary {
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
