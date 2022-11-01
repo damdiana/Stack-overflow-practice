@@ -27,6 +27,8 @@ body {
 }
 
 .top-navbar {
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: var(--white-gray);
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 0px;
     border-top: var(--primary-orange) solid 3px;
@@ -43,29 +45,19 @@ a {
     color: inherit;
 }
 
-@media screen and (max-width:1200px) {
-    nav {
-        flex-direction: row;
-        padding-bottom: 1em;
-    }
+.search-input {
+    width: 50vw;
+}
 
-    .search-input {
-        width: 200px;
-        margin-bottom: 1em;
-        margin-top: 1em;
-    }
-
-    .search-icon {
-        font-size: inherit;
-        top: 1.5rem;
-        width: 1em;
-    }
+.top-navbar__search-button,
+.logo-square {
+    display: none;
 }
 
 /* side nav bar */
 
 .side-navbar {
-    height: 100vh;
+    min-height: 100vh;
     width: 160px;
     left: 0;
     background-color: var(--white);
@@ -131,7 +123,11 @@ h1 {
     color: var(--gray-2);
     flex-shrink: 0;
     font-size: 14px;
-    padding-left: 3em;
+    margin-right: 1em;
+}
+
+.summary p:first-child {
+    margin: 0;
 }
 
 .summary p:first-child {
@@ -226,10 +222,85 @@ aside .text-with-icon svg {
     border: 1px solid var(--gray-3);
 }
 
-.search-input {
-    width: 800px;
-}
-
 .filtering-form input[type="text"] {
     width: 180px;
+}
+
+/* making the page responsive */
+
+@media screen and (max-width: 1200px) {
+    .top-navbar {
+        justify-content: space-between;
+    }
+
+    .search-input {
+        width: 30vw;
+    }
+
+    .side-navbar {
+        padding-left: 0.5em;
+        padding-right: 1em;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    aside {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .top-navbar__item {
+        display: none;
+    }
+
+    #productNavItem {
+        display: block;
+    }
+
+    .filter-question .btn:nth-last-child(3),
+    .filter-question .btn:nth-last-child(4) {
+        display: none;
+    }
+
+    .filtering-form div {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .top-navbar form,
+    .logo-full {
+        display: none;
+    }
+
+    .top-navbar__search-button,
+    .logo-square {
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .side-navbar {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .main__section {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .filtering-controls {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+    }
 }

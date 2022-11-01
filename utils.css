@@ -39,6 +39,14 @@
     flex-direction: row;
 }
 
+.gap-x-1 {
+    column-gap: 0.25em;
+}
+
+.gap-x-3 {
+    column-gap: 0.75em;
+}
+
 /*********************** Other displays  */
 .block {
     display: block;

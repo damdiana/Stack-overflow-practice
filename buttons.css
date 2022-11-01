@@ -6,6 +6,11 @@
     line-height: 1.25em;
 }
 
+.btn-transparent {
+    border: 0;
+    background: none;
+}
+
 .btn-lightblue {
     background-color: var(--lightblue);
     border-color: var(--navy);
@@ -51,10 +56,6 @@
 }
 
 .btn-text-navy:hover {
-    background-color: var(--lightblue);
-}
-
-.btn-transparent:hover {
     background-color: var(--lightblue);
 }
 
