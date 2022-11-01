@@ -43,6 +43,17 @@ a {
     color: inherit;
 }
 
+nav form input {
+    font-size: inherit;
+    border-radius: 0.3em;
+    background-color: var(--white);
+    border: 1px solid var(--gray-3);
+    padding-left: 2em;
+    width: 800px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5em;
+}
+
 @media screen and (max-width:1200px) {
     nav {
         flex-direction: row;
@@ -101,8 +112,111 @@ nav ul {
     line-height: 2em;
 }
 
+/* main */
+
+main {
+    width: 60%;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.summary {
+    width: 10%;
+    color: var(--gray-2);
+    flex-shrink: 0;
+    font-size: 14px;
+    padding-left: 3em;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--blue);
+    margin: 0;
+}
+
+.summary p:first-child {
+    margin: 0;
+}
+
+h2 a:visited {
+    color: var(--dark-blue);
+}
+
+.post-summary {
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.post-summary a {
+    color: var(--blue);
+}
+
+/* aside */
+
+aside {
+    background-color: hsl(47deg 87% 94%);
+    width: 300px;
+    height: 600px;
+    border-radius: 0.1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 0px;
+    border: 1px solid hsl(46deg 65% 84%);
+    padding: 0 1em 1em 0;
+    margin: 1.5em;
+}
+
+.title-aside {
+    background-color: hsl(46deg 87% 91%);
+    border: 1px solid hsl(46deg 65% 84%);
+    padding: 0.5em;
+}
+
+aside header {
+    margin-top: 0;
+    padding-top: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+/* icons */
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.btn-icon svg {
+    height: 1em;
+}
+
+.btn-icon.gray svg {
+    fill: var(--gray-2);
+}
+
+.btn-icon.navy svg {
+    fill: var(--navy);
+}
+
+aside .text-with-icon.icon-top svg {
+    fill: var(--black);
+    width: 0.8em;
+}
+
 .text-with-icon {
     position: relative;
+}
+
+.text-with-icon svg {
+    position: absolute;
+    width: 1em;
+    fill: var(--gray-2);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .text-with-icon.icon-left svg {
@@ -113,10 +227,8 @@ nav ul {
     right: 1em;
 }
 
-.text-with-icon svg {
-    position: absolute;
-    width: 1em;
-    fill: var(--gray-2);
+
+.text-with-icon.icon-center svg {
     top: 50%;
     transform: translateY(-50%);
 }

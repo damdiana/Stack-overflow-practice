@@ -53,3 +53,21 @@
 .btn-text-navy:hover {
     background-color: var(--lightblue);
 }
+
+.filter-question .btn {
+    border-radius: 0;
+}
+
+.filter-question .btn:first-child {
+    border-bottom-left-radius: 0.2em;
+    border-top-left-radius: 0.2em;
+}
+
+.filter-question .btn:nth-last-child(2) {
+    border-bottom-right-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+
+.btn-transparent:hover {
+    background-color: var(--lightblue);
+}

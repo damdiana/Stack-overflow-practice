@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formular </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="utils.css" rel="stylesheet">
+    <link rel="stylesheet" href="formular.css">
+</head>
+
+<body>
+    <form>
+        <div class="form-style">
+            <div class="flex flex-start ">
+                <div class="flex column p1 line-height">
+                    <p class="font-weight-600"> Filter by </p>
+                    <label>
+                        <input type="checkbox" value="no_answers" name="filter_by">
+                        <span> No answers <span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="no_accepted_answers" name="filter_by">
+                        <span> No accepted answer <span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="has_bounty" name="filter_by">
+                        <span> Has bounty <span>
+                    </label>
+                </div>
+
+                <div class="flex column p1 line-height">
+                    <p class="font-weight-600"> Sorted by </p>
+                    <label>
+                        <input type="radio" value="newest" name="sorted_by">
+                        <span> Newest <span>
+                    </label>
+                    <label>
+                        <input checked type="radio" value="recent_activity" name="sorted_by">
+                        <span> Recent activity <span>
+                    </label>
+                    <label>
+                        <input type="radio" value="highest_score" name="sorted_by">
+                        <span> Highest score <span>
+                    </label>
+                    <label>
+                        <input type="radio" value="most_frequent" name="sorted_by">
+                        <span> Most frequent <span>
+                    </label>
+                    <label>
+                        <input type="radio" value="bounty_ending_soon" name="sorted_by">
+                        <span> Bounty ending soon <span>
+                    </label>
+                </div>
+
+                <div class="flex column p1 line-height">
+                    <p class="font-weight-600"> Tagged with </p>
+                    <label>
+                        <input checked type="radio" value="my_watched_tags" name="tagged_with">
+                        <span> My watched tags <span>
+                    </label>
+                    <label>
+                        <input type="radio" value="the_following)tags" name="tagged_with">
+                        <span> The following tags: <span>
+                                <div class="p05"> <input class="test" placeholder="e.g javascript or phyton" type="text"
+                                        name="search">
+                                    <input hidden type="submit" value="Search" />
+                                </div>
+
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div class="flex justify-between">
+                <p class="btn btn-blue m1 font-14 p05"> Apply filter </p>
+                <p class="btn-transparent font-14 p05 m1"> Cancel </p>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
