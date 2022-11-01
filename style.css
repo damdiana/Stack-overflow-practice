@@ -1,3 +1,5 @@
+@import "./buttons.css";
+
 :root {
     --black: #222426;
     --gray-1: #525960;
@@ -13,4 +15,73 @@
     --blue: #0a95ff;
     --lightblue: #e1ecf4;
     --primary-orange: #f48225;
+}
+
+/* nav bar up */
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+.search-icon {
+    font-size: inherit;
+    position: absolute;
+    left: 1em;
+    bottom: 0.7em;
+    width: 1em;
+    fill: var(--gray-2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--white-gray);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 0px;
+    border-top: var(--primary-orange) solid 3px;
+    font-size: 15px;
+    column-gap: 0.7em;
+}
+
+nav {
+    color: var(--gray-2);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form input {
+    font-size: inherit;
+    border-radius: 0.3em;
+    background-color: var(--white);
+    border: 1px solid var(--gray-3);
+    padding-left: 2em;
+    width: 800px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5em;
+}
+
+@media screen and (max-width:1200px) {
+    nav {
+        flex-direction: row;
+        padding-bottom: 1em;
+    }
+
+    form input {
+        width: 200px;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .search-icon {
+        font-size: inherit;
+        position: absolute;
+        top: 1.5rem;
+        width: 1em;
+    }
+
 }

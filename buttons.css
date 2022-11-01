@@ -1,0 +1,18 @@
+.btn {
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+    border-radius: 0.2em;
+}
+
+.btn-lightblue {
+    background-color: var(--lightblue);
+    border-color: var(--navy);
+    color: var(--navy);
+}
+
+.btn-blue {
+    border-color: var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+}
