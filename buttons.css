@@ -3,12 +3,15 @@
     border-style: solid;
     padding: 0.3em 0.3em 0.3em 0.5em;
     border-radius: 0.2em;
+    line-height: 1.25em;
 }
 
 .btn-lightblue {
     background-color: var(--lightblue);
     border-color: var(--navy);
     color: var(--navy);
+    fill: var(--navy);
+
 }
 
 .btn-blue {
@@ -22,4 +25,21 @@
     color: var(--white);
     border-color: var(--primary-orange);
     box-shadow: inset hsl(25deg 91% 75%) 0 1px 0 0;
+}
+
+.btn-gray {
+    border-color: var(--gray-3);
+    color: var(--gray-2);
+    fill: var(--gray-2);
+    background-color: var(--white);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.btn-icon svg {
+    height: 1em;
 }
