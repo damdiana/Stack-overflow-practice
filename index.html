@@ -6,27 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Newest Questions - Stack overflow </title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav class="top-navbar flex flex-wrap justify-center align-center">
-        <a href="https://stackoverflow.com/">
-            <img src="./assets/1280px-stack_overflow_logo.png" alt="logo" width="150"> </a>
-        <a href="https://stackoverflow.co/"> About </a>
-        <p> Products</p>
-        <a href="https://stackoverflow.co/teams/"> For teams </a>
-        <form class="relative text-input-with-icon">
-            <input class="text-input text-input-with-icon search-input" placeholder=" Search..." type="text"
-                name="search">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
-            </svg>
-            <input hidden type="submit" value="Search" />
-        </form>
-        <div>
+        <div class="flex align-center gap-x-3">
+            <a href="https://stackoverflow.com/">
+                <img class="logo-full" src="./assets/1280px-stack_overflow_logo.png" alt="logo" width="150">
+                <img class="logo-square" src="./assets/square-logo.png" alt="logo" width="40">
+            </a>
+            <a class="top-navbar__item" href="https://stackoverflow.co/"> About </a>
+            <p id="productNavItem" class="top-navbar__item"> Products</p>
+            <a class="top-navbar__item" href="https://stackoverflow.co/teams/"> For teams </a>
+        </div>
+        <div class="flex align-center gap-x-3">
+            <form class="relative text-input-with-icon">
+                <input class="text-input text-input-with-icon search-input" placeholder=" Search..." type="text"
+                    name="search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                </svg>
+                <input hidden type="submit" value="Search" />
+            </form>
+            <button class="top-navbar__search-button btn-transparent btn-icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                </svg>
+            </button>
 
             <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions"
                 class="btn btn-lightblue mr-1">
@@ -85,15 +95,14 @@
         </nav>
 
         <main>
-
-            <div class="px-8 py-0">
+            <div class="main__section px-8 py-0">
                 <div class="flex justify-between align-center">
                     <h1> All Questions </h1>
                     <a class="btn btn-blue align-center"
                         href="https://stackoverflow.com/users/login?ssrc=anon_ask&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2fask">
                         Ask Question </a>
                 </div>
-                <div class="flex justify-between">
+                <div class="filtering-controls flex justify-between">
                     <p class="font-18 font-weight-light"> 23,161,837 questions </p>
                     <div class="flex align-center filter-question">
                         <a class="btn btn-gray font-15 px-3 py-2" href="https://stackoverflow.com/questions?tab=Newest">
@@ -187,7 +196,7 @@
                 </form>
             </div>
             <hr>
-            <article class="flex justify-center pt-4">
+            <article class="main__section flex justify-center px-8 pt-4">
                 <div class="summary justify-end">
                     <p class="mt-0"> 0 votes </p>
                     <p> 0 answers </p>
@@ -220,7 +229,7 @@
                 </div>
             </article>
             <hr>
-            <article class="flex justify-center pt-4">
+            <article class="main__section flex justify-center px-8 pt-4">
                 <div class="summary justify-end">
                     <p class="mt-0"> 47 votes </p>
                     <p> 21 answers </p>
@@ -255,7 +264,7 @@
                 </div>
             </article>
             <hr>
-            <article class="flex justify-center pt-4">
+            <article class="main__section flex justify-center px-8 pt-4">
                 <div class="summary justify-end">
                     <p class="mt-0"> 50 votes </p>
                     <p> 10 answers </p>
