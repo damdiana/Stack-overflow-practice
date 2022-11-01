@@ -26,18 +26,13 @@ body {
 
 .search-icon {
     font-size: inherit;
-    position: absolute;
     left: 1em;
     bottom: 0.7em;
     width: 1em;
     fill: var(--gray-2);
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.top-navbar {
     background-color: var(--white-gray);
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 0px;
     border-top: var(--primary-orange) solid 3px;
@@ -79,9 +74,69 @@ form input {
 
     .search-icon {
         font-size: inherit;
-        position: absolute;
         top: 1.5rem;
         width: 1em;
     }
+}
 
+/* side nav bar */
+
+.side-navbar {
+    height: 100vh;
+    width: 160px;
+    left: 0;
+    background-color: var(--white);
+    font-size: 15px;
+    overflow-x: hidden;
+    padding-top: 17px;
+    padding-left: 4em;
+    border-right: solid 1px var(--gray-4);
+    z-index: -1;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.sidebar-item--active {
+    background-color: var(--gray-6);
+    border-right: solid 2px var(--primary-orange);
+    font-weight: 600;
+}
+
+.teams-card {
+    border-left: solid 0.5px var(--gray-3);
+    border-top: solid 0.5px var(--gray-3);
+    border-bottom: solid 0.5px var(--gray-3);
+    border-bottom-left-radius: 0.1em;
+    border-bottom-right-radius: 0.1em;
+    padding: 0 1em 1em 1em;
+
+}
+
+.sidebar-item {
+    padding-left: 1.5em;
+    line-height: 2em;
+}
+
+.text-with-icon {
+    position: relative;
+}
+
+.text-with-icon.icon-left svg {
+    left: -1.40em;
+}
+
+.text-with-icon.icon-right svg {
+    right: 1em;
+}
+
+.text-with-icon svg {
+    position: absolute;
+    width: 1em;
+    fill: var(--gray-2);
+    top: 50%;
+    transform: translateY(-50%);
 }

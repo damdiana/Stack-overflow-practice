@@ -11,15 +11,15 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="top-navbar flex flex-wrap justify-center align-center">
         <a href="https://stackoverflow.com/">
-            <img src="assets/1280px-stack_overflow_logo.png" alt="logo" width="150"> </a>
+            <img src="./assets/1280px-stack_overflow_logo.png" alt="logo" width="150"> </a>
         <a href="https://stackoverflow.co/"> About </a>
         <p> Products</p>
         <a href="https://stackoverflow.co/teams/"> For teams </a>
         <form class="relative">
             <input placeholder=" Search..." type="text" name="search">
-            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <svg class="search-icon absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                 <path
                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
@@ -37,7 +37,54 @@
         </div>
     </nav>
 
+    <nav class="side-navbar relative">
+        <a href="https://stackoverflow.com/"> Home </a>
+        <p class="mb-0"> Public </p>
+        <ul>
+            <li class="sidebar-item--active sidebar-item">
+                <a class="text-with-icon icon-left" href="https://stackoverflow.com/questions">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z" />
+                    </svg>
+                    Questions
+                </a>
+            </li>
+            <li class="sidebar-item"> <a href="https://stackoverflow.com/tags"> Tags </a></li>
+            <li class="sidebar-item"> <a href="https://stackoverflow.com/users"> Users </a> </li>
+            <li class="sidebar-item"> <a href="https://stackoverflow.com/jobs/companies"> Companies </a> </li>
+        </ul>
+        <div class="relative">
+            <p class="mb-0 text-with-icon icon-right"> Colectives <svg class="absolute"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z" />
+                </svg> </p>
+            <ul>
+                <li class="sidebar-item"> <a href="https://stackoverflow.com/collectives"
+                        class="text-with-icon icon-left"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                        </svg> Explore Colectives </a> </li>
+            </ul>
+        </div>
 
+        <p> Teams </p>
+        <div class="teams-card">
+            <p> <strong> Stack Overflow for Teams </strong> - Start collaborating and sharing
+                organizational knowledge.
+            </p>
+            <img src="./assets/teams-illo-free-sidebar-promo.svg" alt="teams-logo">
+            <a class="btn btn-orange block align-text-center mb-02 font-12"
+                href="https://try.stackoverflow.co/why-teams/?utm_source=so-owned&utm_medium=side-bar&utm_campaign=campaign-38&utm_content=cta">
+                Create a free Team </a>
+            <a class="align-text-center block font-12" href="https://stackoverflow.co/teams/"> Why Teams? </a>
+
+        </div>
+    </nav>
 
 </body>
 

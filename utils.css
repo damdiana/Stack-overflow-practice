@@ -2,16 +2,24 @@
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .block {
     display: block;
 }
 
-.align {
+.align-center {
     align-items: center;
 }
 
 .justify-center {
     justify-content: center;
+}
+
+.align-text-center {
+    text-align: center;
 }
 
 .column {
@@ -22,6 +30,22 @@
     position: relative;
 }
 
+.absolute {
+    position: absolute;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
 .mr-03 {
     margin-right: 0.3em;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-02 {
+    margin-bottom: 0.2em;
 }

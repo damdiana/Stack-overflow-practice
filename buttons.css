@@ -16,3 +16,10 @@
     background-color: var(--blue);
     color: var(--white);
 }
+
+.btn-orange {
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border-color: var(--primary-orange);
+    box-shadow: inset hsl(25deg 91% 75%) 0 1px 0 0;
+}
