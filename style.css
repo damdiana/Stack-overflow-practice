@@ -111,7 +111,6 @@ nav ul {
     border-bottom-left-radius: 0.1em;
     border-bottom-right-radius: 0.1em;
     padding: 0 1em 1em 1em;
-
 }
 
 .sidebar-item {
@@ -137,4 +136,62 @@ nav ul {
     fill: var(--gray-2);
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* main */
+
+main {
+    width: 60%;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.filter-question .btn {
+    border-radius: 0;
+}
+
+.filter-question .btn:first-child {
+    border-bottom-left-radius: 0.2em;
+    border-top-left-radius: 0.2em;
+}
+
+.filter-question .btn:nth-last-child(2) {
+    border-bottom-right-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+
+.summary {
+    width: 10%;
+    color: var(--gray-2);
+    flex-shrink: 0;
+    font-size: 14px;
+    padding-left: 3em;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--blue);
+    margin: 0;
+}
+
+h2 a:visited {
+    color: var(--dark-blue);
+}
+
+.post-summary {
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.post-summary a {
+    color: var(--blue);
+}
+
+.article-tag {
+    border: 0;
 }
