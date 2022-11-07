@@ -91,8 +91,6 @@ form input {
     padding-top: 17px;
     padding-left: 4em;
     border-right: solid 1px var(--gray-4);
-    z-index: -1;
-
 }
 
 nav ul {
