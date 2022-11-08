@@ -18,6 +18,10 @@
     display: inline-block;
 }
 
+.align-text-center {
+    text-align: center;
+}
+
 .align-center {
     align-items: center;
 }
@@ -46,40 +50,54 @@
     position: relative;
 }
 
-.gap {
-    gap: 1em;
+.absolute {
+    position: absolute;
 }
 
 .mb-0 {
     margin-bottom: 0;
 }
 
-.br-left {
-    border-bottom-left-radius: 0.2em;
-    border-top-left-radius: 0.2em;
-}
-
-.br-right {
-    border-bottom-right-radius: 0.2em;
-    border-top-right-radius: 0.2em;
-}
-
-.padding-027 {
-    padding: 0 2.7em;
-}
-
-.font-size18px {
-    font-size: 18px;
-}
-
-.font-weight-light {
-    font-weight: light;
+.padding-02 {
+    padding: 0 2em;
 }
 
 .padding-left3 {
     padding-left: 3rem;
 }
 
+.font-size18px {
+    font-size: 18px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-weight-light {
+    font-weight: light;
+}
+
 .mr-03 {
     margin-right: 0.3em;
+}
+
+.ml1 {
+    margin-left: 1em;
+}
+
+.pad-0508 {
+    padding: 0.5em 0.8em;
+}
+
+.pt1 {
+    padding-top: 1em;
 }

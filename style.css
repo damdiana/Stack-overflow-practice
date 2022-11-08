@@ -111,7 +111,6 @@ nav ul {
     border-bottom-left-radius: 0.1em;
     border-bottom-right-radius: 0.1em;
     padding: 0 1em 1em 1em;
-
 }
 
 .sidebar-item {
@@ -139,49 +138,14 @@ nav ul {
     transform: translateY(-50%);
 }
 
-.align-text {
-    text-align: center;
-    display: block;
-    font-size: 12px;
-
-}
-
 .img-teams {
     width: 8em;
 }
 
 /* main */
 
-.gray-button {
-    border: solid 1px var(--gray-3);
-    padding: 0.5em 0.8em;
-    gap: 0.2em;
-    color: var(--gray-2);
-    font-size: 15px;
-
-}
-
 main {
     width: 60%;
-}
-
-.blue-button {
-    border: solid 1px var(--blue);
-    background-color: var(--blue);
-    padding: 0.3em;
-    color: var(--white);
-    box-shadow: inset hsl(210deg 100% 75%) 0 1px 0 0;
-    border-radius: 0.2em;
-
-}
-
-.light-blue-button {
-    border: var(--navy) solid 1px;
-    background-color: var(--lightblue);
-    padding: 0.5em 0.8em;
-    border-radius: 0.2em;
-    color: var(--navy);
-    margin-left: 1em;
 }
 
 h1 {
@@ -189,21 +153,59 @@ h1 {
     font-weight: normal;
 }
 
+.btn-gray.right-radius {
+    border-bottom-right-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+
+.filter-question .btn-gray {
+    border-radius: 0;
+}
+
+.filter-question .btn-gray:first-child {
+    border-bottom-left-radius: 0.2em;
+    border-top-left-radius: 0.2em;
+}
+
+.filter-question .btn-gray:nth-last-child(2) {
+    border-bottom-right-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+
+.filter-icon-left,
+.filter-icon-righ {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.filter-icon-left svg {
+    width: 0.5em;
+    fill: var(--gray-2);
+}
+
+.filter-icon-right svg {
+    width: 1em;
+    fill: var(--navy);
+}
+
 .summary {
-    gap: 6px;
     width: 10%;
-    align-items: flex-end;
     color: var(--gray-2);
     flex-shrink: 0;
     font-size: 14px;
     padding-left: 3em;
-
 }
 
 h2 {
     font-size: 20px;
     font-weight: normal;
     color: var(--blue);
+    margin: 0;
+}
+
+.summary p:first-child {
+    margin: 0;
 }
 
 h2 a:visited {
@@ -220,11 +222,11 @@ h2 a:visited {
 }
 
 .post-summary {
-    justify-content: flex-end;
-    display: flex;
-    flex-wrap: wrap;
     gap: 1em;
-    align-items: center;
     margin: 0;
     padding: 0;
+}
+
+.post-summary a {
+    color: var(--blue);
 }

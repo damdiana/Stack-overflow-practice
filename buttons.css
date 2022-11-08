@@ -23,3 +23,8 @@
     border-color: var(--primary-orange);
     box-shadow: inset hsl(25deg 91% 75%) 0 1px 0 0;
 }
+
+.btn-gray {
+    border-color: var(--gray-3);
+    color: var(--gray-2);
+}
