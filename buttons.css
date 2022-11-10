@@ -43,3 +43,13 @@
 .btn-icon svg {
     height: 1em;
 }
+
+.btn-text-navy {
+    color: var(--navy);
+    background-color: var(--gray-6);
+    border: 0;
+}
+
+.btn-text-navy:hover {
+    background-color: var(--lightblue);
+}

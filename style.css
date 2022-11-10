@@ -1,4 +1,5 @@
 @import "./buttons.css";
+@import "./inputs.css";
 
 :root {
     --black: #222426;
@@ -22,14 +23,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-}
-
-.search-icon {
-    font-size: inherit;
-    left: 1em;
-    bottom: 0.7em;
-    width: 1em;
-    fill: var(--gray-2);
+    accent-color: var(--blue);
 }
 
 .top-navbar {
@@ -49,24 +43,13 @@ a {
     color: inherit;
 }
 
-form input {
-    font-size: inherit;
-    border-radius: 0.3em;
-    background-color: var(--white);
-    border: 1px solid var(--gray-3);
-    padding-left: 2em;
-    width: 800px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5em;
-}
-
 @media screen and (max-width:1200px) {
     nav {
         flex-direction: row;
         padding-bottom: 1em;
     }
 
-    form input {
+    .search-input {
         width: 200px;
         margin-bottom: 1em;
         margin-top: 1em;
@@ -194,4 +177,20 @@ h2 a:visited {
 
 .article-tag {
     border: 0;
+}
+
+/* form  */
+
+.filtering-form {
+    border-radius: 0.3em;
+    background-color: var(--gray-6);
+    border: 1px solid var(--gray-3);
+}
+
+.search-input {
+    width: 800px;
+}
+
+.filtering-form input[type="text"] {
+    width: 180px;
 }
