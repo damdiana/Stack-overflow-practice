@@ -158,17 +158,13 @@ aside {
     margin: 1.5em;
 }
 
-.title-aside {
-    background-color: hsl(46deg 87% 91%);
-    border: 1px solid hsl(46deg 65% 84%);
-    padding: 0.5em;
-}
-
 aside header {
     margin-top: 0;
     padding-top: 0;
-    display: inline-block;
     width: 100%;
+    background-color: hsl(46deg 87% 91%);
+    border: 1px solid hsl(46deg 65% 84%);
+    padding: 0.5em;
 }
 
 /* icons */
