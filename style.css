@@ -43,17 +43,6 @@ a {
     color: inherit;
 }
 
-nav form input {
-    font-size: inherit;
-    border-radius: 0.3em;
-    background-color: var(--white);
-    border: 1px solid var(--gray-3);
-    padding-left: 2em;
-    width: 800px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5em;
-}
-
 @media screen and (max-width:1200px) {
     nav {
         flex-direction: row;
@@ -203,8 +192,8 @@ aside header {
 }
 
 aside .text-with-icon.icon-top svg {
-    fill: var(--black);
     width: 0.8em;
+    top: 0;
 }
 
 .text-with-icon {
@@ -214,9 +203,7 @@ aside .text-with-icon.icon-top svg {
 .text-with-icon svg {
     position: absolute;
     width: 1em;
-    fill: var(--gray-2);
-    top: 50%;
-    transform: translateY(-50%);
+    fill: currentColor;
 }
 
 .text-with-icon.icon-left svg {
@@ -227,11 +214,15 @@ aside .text-with-icon.icon-top svg {
     right: 1em;
 }
 
+.icon-top {
+    top: 0;
+}
 
-.text-with-icon.icon-center svg {
+.icon-center svg {
     top: 50%;
     transform: translateY(-50%);
 }
+
 
 /* main */
 
