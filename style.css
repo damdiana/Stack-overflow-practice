@@ -201,11 +201,11 @@ aside .text-with-icon svg {
     fill: currentColor;
 }
 
-.text-with-icon.text-with-icon--left svg {
+.text-with-icon--left svg {
     left: -1.40em;
 }
 
-.text-with-icon.text-with-icon--right svg {
+.text-with-icon--right svg {
     right: 1em;
 }
 
