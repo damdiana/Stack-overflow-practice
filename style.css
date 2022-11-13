@@ -112,6 +112,20 @@ h1 {
     font-weight: normal;
 }
 
+.filter-question .btn {
+    border-radius: 0;
+}
+
+.filter-question .btn:first-child {
+    border-bottom-left-radius: 0.2em;
+    border-top-left-radius: 0.2em;
+}
+
+.filter-question .btn:nth-last-child(2) {
+    border-bottom-right-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+
 .summary {
     width: 10%;
     color: var(--gray-2);
@@ -129,21 +143,6 @@ h2 {
     font-weight: normal;
     color: var(--blue);
     margin: 0;
-}
-
-
-.filter-question .btn {
-    border-radius: 0;
-}
-
-.filter-question .btn:first-child {
-    border-bottom-left-radius: 0.2em;
-    border-top-left-radius: 0.2em;
-}
-
-.filter-question .btn:nth-last-child(2) {
-    border-bottom-right-radius: 0.2em;
-    border-top-right-radius: 0.2em;
 }
 
 h2 a:visited {
