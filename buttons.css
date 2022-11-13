@@ -54,20 +54,24 @@
     background-color: var(--lightblue);
 }
 
-.filter-question .btn {
-    border-radius: 0;
-}
-
-.filter-question .btn:first-child {
-    border-bottom-left-radius: 0.2em;
-    border-top-left-radius: 0.2em;
-}
-
-.filter-question .btn:nth-last-child(2) {
-    border-bottom-right-radius: 0.2em;
-    border-top-right-radius: 0.2em;
-}
-
 .btn-transparent:hover {
     background-color: var(--lightblue);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.btn-icon svg {
+    height: 1em;
+}
+
+.btn-icon.gray svg {
+    fill: var(--gray-2);
+}
+
+.btn-icon.navy svg {
+    fill: var(--navy);
 }
