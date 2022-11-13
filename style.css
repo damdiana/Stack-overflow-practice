@@ -131,19 +131,6 @@ h2 {
     margin: 0;
 }
 
-h2 a:visited {
-    color: var(--dark-blue);
-}
-
-.post-summary {
-    gap: 1em;
-    margin: 0;
-    padding: 0;
-}
-
-.post-summary a {
-    color: var(--blue);
-}
 
 .filter-question .btn {
     border-radius: 0;
@@ -157,6 +144,20 @@ h2 a:visited {
 .filter-question .btn:nth-last-child(2) {
     border-bottom-right-radius: 0.2em;
     border-top-right-radius: 0.2em;
+}
+
+h2 a:visited {
+    color: var(--dark-blue);
+}
+
+.post-summary {
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.post-summary a {
+    color: var(--blue);
 }
 
 .article-tag {
@@ -187,9 +188,8 @@ aside header {
 
 /* icons */
 
-.text-with-icon.text-with-icon--top svg {
+aside .text-with-icon svg {
     width: 0.8em;
-    top: 0;
 }
 
 .text-with-icon {
@@ -202,11 +202,11 @@ aside header {
     fill: currentColor;
 }
 
-.text-with-icon.icon-left svg {
+.text-with-icon.text-with-icon--left svg {
     left: -1.40em;
 }
 
-.text-with-icon.icon-right svg {
+.text-with-icon.text-with-icon--right svg {
     right: 1em;
 }
 
@@ -218,7 +218,6 @@ aside header {
     top: 50%;
     transform: translateY(-50%);
 }
-
 
 /* form  */
 
