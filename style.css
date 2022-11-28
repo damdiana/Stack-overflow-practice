@@ -45,6 +45,11 @@ a {
     color: inherit;
 }
 
+#navButton {
+    display: none;
+    width: 15px;
+}
+
 .search-input {
     width: 50vw;
 }
@@ -66,6 +71,12 @@ a {
     padding-top: 17px;
     padding-left: 4em;
     border-right: solid 1px var(--gray-4);
+}
+
+.side-navbar--open {
+    position: absolute;
+    padding-left: 1em;
+    width: 230px;
 }
 
 nav ul {
@@ -241,7 +252,7 @@ aside .text-with-icon svg {
         width: 30vw;
     }
 
-    .side-navbar {
+    .side-navbar:not(.side-navbar--open) {
         padding-left: 0.5em;
         padding-right: 1em;
     }
@@ -290,7 +301,7 @@ aside .text-with-icon svg {
 }
 
 @media screen and (max-width:600px) {
-    .side-navbar {
+    .side-navbar:not(.side-navbar--open) {
         display: none;
     }
 
@@ -306,5 +317,9 @@ aside .text-with-icon svg {
     .filtering-controls {
         flex-direction: column;
         margin-bottom: 0.5em;
+    }
+
+    #navButton {
+        display: block;
     }
 }
