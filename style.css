@@ -216,6 +216,10 @@ aside .text-with-icon svg {
 
 /* form  */
 
+#filterButton.is--open svg {
+    transform: rotate(180deg);
+}
+
 .filtering-form {
     border-radius: 0.3em;
     background-color: var(--gray-6);
